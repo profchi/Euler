@@ -30,7 +30,7 @@ public class Program
 		}
 		int [] myArray = new int[6];
 		for (int i = 0; i < s.Length; ++i){
-			myArray[i]	= (int)s[i] - 48;
+			myArray[i] = (int)s[i] - 48;
 			myArray[i] += i;
 		}
 		return myArray;
@@ -40,9 +40,9 @@ public class Program
 	static bool checkIfSequential(int [] myArray){
 		int minValue = myArray [0];
 		for(int i = 1; i < myArray.Length; ++ i){
-				if(myArray[i] <= minValue)
-					return false;
-				minValue = myArray[i];
+			if(myArray[i] <= minValue)
+				return false;
+			minValue = myArray[i];
 		}
 		return true;
 	}
